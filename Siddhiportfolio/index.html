@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      alert("Hello, I'm Siddhi 👋 Welcome to my Portfolio!");
+    }
+  </script>
+  <script>
+  function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("active");
+    // document.querySelector('main').style.marginTop="250px"
+    document.querySelector('main').classList.toggle("marginToggle")
+    
+  }
+</script>
+
+    <header>
+        <nav>
+            <div class="left">
+                Siddhi's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="/">Achievments</a></li>
+                    <li><a href="/">Projects</a></li>
+                
+                </ul>
+
+            </div>
+<div class="button-container">
+              <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+              Hello, My name is <span class="purple">Siddhi</span>
+              
+            <div>I am Student of TKIET</div>
+            <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+              <img src="http://shakebugs.com/wp-content/uploads/2022/07/Shake-naslovne-slike-3-1-1.png" alt="developer">
+
+            </div>
+        </section>
+        <hr>
+        <section id="About" class="About">
+    <h3>About Me</h3>
+    <div class="About-grid">
+        <div class="About-card">
+            <i class="fa-solid fa-school"></i>
+            <h3>Secondary Education</h3>
+            <p>Royal Public School(CBSE)</p>
+        </div>
+    <div class="About-card">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h3>Higher Education</h3>
+            <p>Sadguru Gadge Maharaj College</p>
+        </div>
+    <div class="About-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Graduation</h3>
+            <p>Tatyasaheb Kore Institute of Engineering and Technology</p>
+        </div>
+    </div>
+ </section>
+ <hr>
+        <section class="thirdsection" id="contact">
+         <h3>Contact Me</h3>
+         <a href="#contact">Contact</a>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+           <a href="mailto:siddhiyadav2504@gmail.com" ><img src="https://www.pngall.com/wp-content/uploads/13/Email-Logo-PNG-Image-HD.png"alt=""></a>
+        </div>
+        <div class="footer-second">
+            <a href="https://wa.me/919834354393"target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/whatsapp-logo-transparent.png"alt=""></a>
+        </div>
+        <div class="footer-third">
+            <a href="https://www.linkedin.com/in/Siddhi Yadav/" target="_blank"><img src="https://freelogopng.com/images/all_img/1656996409linkedin-symbol.png"alt=""></a>
+        </div>
+        <div class="footer-fourth">
+          <a href="https://www.instagram.com/_nunsong_ii/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/021/495/954/original/instagram-logo-icon-free-png.png"alt=""></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+    var typed = new Typed('#element', {
+      strings: ['', 'Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      const btn = document.querySelector(".theme-toggle");
+      if (document.body.classList.contains("light")) {
+        btn.textContent = "☀️";
+      } else {
+        btn.textContent = "🌙";
+        
+      }
+    }
+  </script>
+
+</body>
+</html>
